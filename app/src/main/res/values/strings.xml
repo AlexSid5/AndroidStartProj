@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidStartProj</string>
+    <string name="welcome_to_krasnodar">Welcome to krasnodar!</string>
 </resources>
