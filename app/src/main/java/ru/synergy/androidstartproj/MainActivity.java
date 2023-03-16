@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         ConstraintLayout constraintLayout = new ConstraintLayout(this);
         TextView textView = new TextView(this);
-        textView.setText("Sanya you Stupid");
+        textView.setText("Hello Android");
         textView.setTextSize(26);
 
         ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(
