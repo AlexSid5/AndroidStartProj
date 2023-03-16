@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView = (TextView) findViewById(R.id.header);
 
-        textView.setText("*HELLO FROM JAVA*");
+        textView.setText("HELLO FROM JAVA");
 
  //       ConstraintLayout constraintLayout = new ConstraintLayout(this);
  //       TextView textView = new TextView(this);//
