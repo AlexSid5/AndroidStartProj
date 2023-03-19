@@ -7,45 +7,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/normal"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="#673AB7"
-        android:textStyle="normal"
-        android:padding="10dp"
-        android:text="Width 208dp"
-        android:textColor="#FFF"
-        android:layout_marginTop="10dp"
-        android:textSize="26sp"/>
-
-
-    <TextView
-        android:id="@+id/bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#673AB7"
-        android:textStyle="bold"
-        android:text="Wigth wrap content"
-        android:textColor="#FFEB3B"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"
-        android:textSize="26sp"/>
-
-
-    <TextView
-        android:id="@+id/italic"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#673AB7"
-        android:textStyle="italic"
-        android:padding="5dp"
-        android:text="Width math_parent"
-        android:textColor="#FFF"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="26sp"/>
-
 </LinearLayout>
 
 
