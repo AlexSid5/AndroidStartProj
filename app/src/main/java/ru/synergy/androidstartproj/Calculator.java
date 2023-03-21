@@ -14,10 +14,9 @@ import android.widget.Toast;
 
 import java.text.BreakIterator;
 
+
 public class Calculator extends AppCompatActivity {
 
-
-    private BreakIterator answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +28,15 @@ public class Calculator extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 calcuclateAnswe();
+
+
             }
         });
+    }
+
+    private void StartActivity(Intent i) {
     }
 
     private void calcuclateAnswe() {
@@ -42,6 +47,12 @@ public class Calculator extends AppCompatActivity {
         RadioButton sub = (RadioButton) findViewById(R.id.subtract);
         RadioButton multiply = (RadioButton) findViewById(R.id.multiple);
         RadioButton divide = (RadioButton) findViewById(R.id.divide);
+
+
+
+        TextView answer = (TextView) findViewById(R.id.result);
+
+
 
         float numone = Integer.parseInt(numOne.getText().toString());
         float numtwo = Integer.parseInt(numTwo.getText().toString());
