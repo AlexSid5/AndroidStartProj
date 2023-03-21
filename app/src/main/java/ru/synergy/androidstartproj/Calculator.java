@@ -16,7 +16,8 @@ import java.text.BreakIterator;
 
 public class Calculator extends AppCompatActivity {
 
-    private Object answer;
+
+    private BreakIterator answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,8 +64,8 @@ public class Calculator extends AppCompatActivity {
             }
             solution = numone / numtwo;
         }
-      //  answer.setText("The answer is " + solution);
-
+        answer.setText("The answer is " + solution);
+    
 
 
 

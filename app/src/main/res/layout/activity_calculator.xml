@@ -10,68 +10,69 @@
     <EditText
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
+        android:text="n"
         app:layout_constraintRight_toLeftOf="@id/editTextNumberDecimal2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal2"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="45dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
+        android:text="n"
         app:layout_constraintBottom_toBottomOf="@id/editTextNumberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/editTextNumberDecimal"
-        android:autofillHints="" />
+        app:layout_constraintLeft_toRightOf="@id/editTextNumberDecimal" />
 
     <RadioGroup
         android:id="@+id/radiogroup"
         android:layout_width="0dp"
-        android:layout_height="51dp"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimal2"
         app:layout_constraintStart_toStartOf="@id/editTextNumberDecimal"
         app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal">
 
-    <RadioButton
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Add"/>
 
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add" />
 
-    <RadioButton
+        <RadioButton
         android:id="@+id/subtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Subtract"/>
+        android:text="Subtract" />
 
 
-    <RadioButton
-        android:id="@+id/multiple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Multiple"/>
+        <RadioButton
+            android:id="@+id/multiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multiple" />
 
-
-    <RadioButton
+        <RadioButton
         android:id="@+id/divide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Divide"/>
+        android:text="Divide" />
 
     </RadioGroup>
 
