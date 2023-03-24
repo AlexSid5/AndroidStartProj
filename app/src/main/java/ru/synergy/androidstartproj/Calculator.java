@@ -18,12 +18,13 @@ import java.text.BreakIterator;
 public class Calculator extends AppCompatActivity {
 
     private static final String LogcatTag ="CALCULATOR_ACTIVITY";
-
+    private static final String LifecycleTag = "LIFECYCLE";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(LifecycleTag, "I'm onCreate(),and i'm started");
         setContentView(R.layout.activity_calculator);
 
         final Button calculate = (Button) findViewById(R.id.calc);
@@ -37,8 +38,26 @@ public class Calculator extends AppCompatActivity {
             }
         });
     }
-
-
+   @Override
+   protected void onStop(){
+        super.onStop();
+        Log.d(LifecycleTag, "I'm onStart(), started");
+   }
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(LifecycleTag, "I'm onStart(), started");
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.d(LifecycleTag, "I'm onStart(), started");
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.d(LifecycleTag, "I'm onStart(), started");
+    }
 
     private void calcuclateAnswe() {
         EditText numOne = (EditText) findViewById(R.id.editTextNumberDecimal);

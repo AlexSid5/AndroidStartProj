@@ -16,7 +16,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text=""
+        android:text="n"
         app:layout_constraintRight_toLeftOf="@id/editTextNumberDecimal2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text=""
+        android:text="n"
         app:layout_constraintBottom_toBottomOf="@id/editTextNumberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/editTextNumberDecimal" />
