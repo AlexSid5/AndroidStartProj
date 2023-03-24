@@ -29,6 +29,20 @@ public class Calculator extends AppCompatActivity {
 
         final Button calculate = (Button) findViewById(R.id.calc);
 
+
+       //Context training
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        ////
+
+
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
