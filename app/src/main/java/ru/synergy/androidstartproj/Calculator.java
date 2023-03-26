@@ -42,13 +42,17 @@ public class Calculator extends AppCompatActivity {
         //
         ////
 
+        ///intent- посылка
+
+        ////
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
                 Log.d(LogcatTag,"Button have been pushed");
                 calcuclateAnswe();
-
+                Intent i = new Intent(Calculator.this, MainActivity.class);//написать письмо
+                startActivity(i);//отправить письмо
             }
         });
     }
@@ -81,6 +85,12 @@ public class Calculator extends AppCompatActivity {
         RadioButton sub = (RadioButton) findViewById(R.id.subtract);
         RadioButton multiply = (RadioButton) findViewById(R.id.multiple);
         RadioButton divide = (RadioButton) findViewById(R.id.divide);
+
+        numOne.setText("0");
+        numTwo.setText("0");
+        add.setChecked(true);
+
+
 
         TextView answer = (TextView) findViewById(R.id.result);
 
